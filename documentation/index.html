@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Catapult - Coming Soon Responsive Template">
+	<meta name="author" content="Rockcode Media">
+
+	<title>Documentation for Catapult - Responsive Coming Soon Template 1.0</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container cp-docs-wrap">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h1>Catapult - Responsive Coming Soon Template 1.0 <span>Documentation</span></h1>
+				<h2>Thank you for purchasing this template. If you have any questions that are beyond the scope of this help file, please feel free to email via our <a href="http://themeforest.net/user/tiltedthemes" target="_blank">contact form</a>. <br><br>
+				Email: <a href="mailto:tiltedthemes@gmail.com">tiltedthemes@gmail.com</a>
+			</div>
+			<ul class="nav nav-pills nav-center">
+			  <li><a href="#structure">Structure &amp; Files</a></li>
+			  <li><a href="#customization">Customization</a></li>
+			  <li><a href="#installation">Installation</a></li>
+			  <li><a href="#credits">Credits</a></li>
+			</ul>
+
+			<p>
+				Catapult is a responsive, easy to customize and modern under construction/coming soon template. Suitable for any company or personal use.
+			</p>
+
+			<section id="structure">
+				<h2>Structure &amp; Files</h2>
+
+				<a href="#generalstructure" class="btn btn-default">General Structure</a>
+				<a href="#cssjsfiles" class="btn btn-default">CSS &amp; JS Files</a>
+				<a href="#phpfiles" class="btn btn-default">PHP Files</a>
+
+
+				<div id="generalstructure" class="page-header">
+					<h3>General Structure <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+				<p>
+				Here is a shortened structure of the main template (<code>index.html</code>).
+				</p>
+
+				<img src="images/html-structure.png">
+
+				<div id="cssjsfiles" class="page-header">
+					<h3>CSS &amp; JS Files <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>Below a list of css and js files used in the template with a short description. All CSS and JS files can be found in the template’s <code>css</code> and <code>js</code> folder.</p>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">CSS Files</h3>
+							</div>
+							<div class="panel-body">
+							<ul>
+								<li><code>bootstrap.min.css</code> - Bootstrap front-end framework</li>
+								<li><code>font-awesome.min.css</code> - Font Awesome icons</li>
+								<li><code>TimeCircles.css</code> -  Styles for the countdown.</li>
+								<li><code>catapult.css</code> - Includes the main template styles.</li>
+								<li><code>color.css</code> - CSS file to safely override colors.</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">JS Files</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li><code>jquery-1.11.1.min.js</code> - jQuery Javascript Library</li>
+                                    <li><code>bootstrap.min.js</code> - Bootstrap Javascript</li>
+                                    <li><code>TimeCircles.js</code> - Javascript for Countdown Timer</li>
+                                    <li><code>jquery.bxslider.min.js</code> - jQuery Content Slider</li>
+                                    <li><code>jquery.validate.min.js</code> - jQuery Form Validation</li>
+                                    <li><code>catapult.js</code> - Custom Javascript</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="phpfiles" class="page-header">
+					<h3>PHP Files <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>
+					<code>notify.php</code> contains the PHP code to handle the notify form submission.
+				</p>
+			</section>
+
+			<section id="customization">
+				<h2>Customization</h2>
+
+				<a href="#edittext" class="btn btn-default">Edit Text</a>
+				<a href="#changecolors" class="btn btn-default">Change Colors</a>
+				<a href="#replacelogo" class="btn btn-default">Replace Logo</a>
+				<a href="#changethelaunchdateandtime" class="btn btn-default">Change the launch date and time</a>
+				<a href="#replacebackgroundsliderimages" class="btn btn-default">Replace Background Slider Images</a>
+                <a href="#singleimagebackground" class="btn btn-default">Single Image Background</a>
+				<a href="#modifysocialprofilesicons" class="btn btn-default">Modify Social Profiles Icons</a>
+				<a href="#changetheemailaddressfornotifyform" class="btn btn-default">Change the Email Address for Notify Form</a>
+
+				<div id="edittext" class="page-header">
+					<h3>Edit Text <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>
+					Open <code>index.html</code> to change all static texts. For example, to change the text "Coming soon. Stay Tuned." edit text between <code>&lt;h1&gt;&lt;/h1&gt;</code> tags on line 36.
+				</p>
+
+				<div id="changecolors" class="page-header">
+					<h3>Change Colors <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>
+					Replace the html color values in <code>color.css</code> to change colors. For example, to change the main color to a nice green color, replace <code>#D45661</code> with <code>#19DD89</code>.
+				</p>
+
+<pre>
+a, a:hover, a:focus {
+	color: #19DD89;
+}
+</pre>
+
+				<p>
+					To change the color of the countdown circles please open <code>catapult.js</code> within the <code>js</code> folder and edit line 22-27.
+				</p>
+<pre>
+Hours: { color: '#D45661' },
+</pre>
+
+				<p>
+					Below are some colors with the corresponding values - that we think fits nicely with the template:
+				</p>
+
+				<ul class="cp-docs-colors">
+					<li><span style="background: #19DD89"></span>#19DD89</li>
+					<li><span style="background: #0598F0"></span>#0598F0</li>
+					<li><span style="background: #FFB237"></span>#FFB237</li>
+					<li><span style="background: #D4BA79"></span>#D4BA79</li>
+					<li><span style="background: #C72D5F"></span>#C72D5F</li>
+					<li><span style="background: #92CEDB"></span>#92CEDB</li>
+					<li><span style="background: #9AB15B"></span>#9AB15B</li>
+				</ul>
+
+				<p>
+					You can find more html color values at <a href="http://www.w3schools.com/html/html_colorvalues.asp" target="_blank">http://www.w3schools.com/html/html_colorvalues.asp</a>.
+				</p>
+
+				<div id="replacelogo" class="page-header">
+					<h3>Replace Logo <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>To change the logo replace <code>logo.png</code> which can be found in the <code>images</code> folder with your own logo.</p>
+				<p>If you have used a different name or extension for the logo, for example company.jpg then you have to change the source of the <code>img</code> tag in <code>index.html</code> on line 32.</p>
+
+<pre>
+&lt;img src="images/company.jpg" alt="Your Company Name"&gt;
+</pre>
+
+				<p>If you don't want a logo, just replace the <code>img</code> tag with text.</p>
+
+				<div id="changethelaunchdateandtime" class="page-header">
+					<h3>Change the launch date and time <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>
+					Edit the <code>data-date</code> value in <code>index.html</code> on line 46 to change the launch date and time.
+				</p>
+
+<pre>
+&lt;div class="catapult-countdown" data-date="2015-01-01 00:00:00"&gt;&lt;/div&gt;
+</pre>
+				<p>
+					The format of the value is <code>yyyy-mm-dd hh:mm:ss</code> (year-month-day hours:minutes:seconds)
+				</p>
+
+				<div id="replacebackgroundsliderimages" class="page-header">
+					<h3>Replace Background Slider Images <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>
+					The images used for the background can be found in the <code>photos</code> folder within the <code>images</code> folder. Replace it with your own images or add new images. 
+					Change their names in <code>index.html</code> on line 108-110 or add more if necessary.
+				</p>
+
+<pre>
+&lt;ul id="catapultBG" class="catapultImages"&gt;
+	&lt;li&gt;&lt;img src="images/blank.png" style="background-image: url(images/photos/01.jpg);">&lt;/li&gt;
+	&lt;li&gt;&lt;img src="images/blank.png" style="background-image: url(images/photos/02.jpg);">&lt;/li&gt;
+	&lt;li&gt;&lt;img src="images/blank.png" style="background-image: url(images/photos/03.jpg);">&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                <div id="singleimagebackground" class="page-header">
+                    <h3>Single Image Background <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+                </div>
+
+				<p>Add only one image if you don't want a slider.</p>
+
+<pre>
+&lt;ul id="catapultBG" class="catapultImages"&gt;
+	&lt;li&gt;&lt;img src="images/blank.png" style="background-image: url(images/photos/01.jpg);">&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+				<div id="modifysocialprofilesicons" class="page-header">
+					<h3>Modify Social Profiles Icons <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>
+					To modify the social profile icons edit <code>index.html</code> on line 88-92. Edit de class of the <code>i</code> tag to change the icons and place your link url in the <code>href</code> attribute.
+				</p>
+
+<pre>
+&lt;a href="LinkToYourProfile" title="Twitter"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+</pre>
+
+				<p>
+					One of the following icons can be used.
+				</p>
+
+				<div class="row cp-icons-list">
+					<div class="col-md-3 col-sm-4"><i class="fa fa-adn"></i> fa-adn</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-android"></i> fa-android</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-apple"></i> fa-apple</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-behance"></i> fa-behance</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-behance-square"></i> fa-behance-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-bitbucket"></i> fa-bitbucket</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-bitbucket-square"></i> fa-bitbucket-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-btc"></i> fa-btc</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-codepen"></i> fa-codepen</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-css3"></i> fa-css3</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-delicious"></i> fa-delicious</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-deviantart"></i> fa-deviantart</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-digg"></i> fa-digg</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-dribbble"></i> fa-dribbble</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-dropbox"></i> fa-dropbox</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-drupal"></i> fa-drupal</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-empire"></i> fa-empire</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-facebook"></i> fa-facebook</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-facebook-square"></i> fa-facebook-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-flickr"></i> fa-flickr</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-foursquare"></i> fa-foursquare</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-ge"></i> fa-ge <span class="text-muted">(alias)</span></div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-git"></i> fa-git</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-git-square"></i> fa-git-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-github"></i> fa-github</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-github-alt"></i> fa-github-alt</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-github-square"></i> fa-github-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-gittip"></i> fa-gittip</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-google"></i> fa-google</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-google-plus"></i> fa-google-plus</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-google-plus-square"></i> fa-google-plus-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-hacker-news"></i> fa-hacker-news</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-html5"></i> fa-html5</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-instagram"></i> fa-instagram</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-joomla"></i> fa-joomla</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-jsfiddle"></i> fa-jsfiddle</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-linkedin"></i> fa-linkedin</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-linkedin-square"></i> fa-linkedin-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-linux"></i> fa-linux</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-maxcdn"></i> fa-maxcdn</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-openid"></i> fa-openid</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-pagelines"></i> fa-pagelines</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-pied-piper"></i> fa-pied-piper</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-pied-piper-alt"></i> fa-pied-piper-alt</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-pied-piper-square"></i> fa-pied-piper-square <span class="text-muted">(alias)</span></div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-pinterest"></i> fa-pinterest</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-pinterest-square"></i> fa-pinterest-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-qq"></i> fa-qq</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-ra"></i> fa-ra <span class="text-muted">(alias)</span></div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-rebel"></i> fa-rebel</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-reddit"></i> fa-reddit</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-reddit-square"></i> fa-reddit-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-renren"></i> fa-renren</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-share-alt"></i> fa-share-alt</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-share-alt-square"></i> fa-share-alt-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-skype"></i> fa-skype</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-slack"></i> fa-slack</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-soundcloud"></i> fa-soundcloud</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-spotify"></i> fa-spotify</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-stack-exchange"></i> fa-stack-exchange</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-stack-overflow"></i> fa-stack-overflow</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-steam"></i> fa-steam</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-steam-square"></i> fa-steam-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-stumbleupon"></i> fa-stumbleupon</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-stumbleupon-circle"></i> fa-stumbleupon-circle</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-tencent-weibo"></i> fa-tencent-weibo</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-trello"></i> fa-trello</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-tumblr"></i> fa-tumblr</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-tumblr-square"></i> fa-tumblr-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-twitter"></i> fa-twitter</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-twitter-square"></i> fa-twitter-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-vimeo-square"></i> fa-vimeo-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-vine"></i> fa-vine</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-vk"></i> fa-vk</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-wechat"></i> fa-wechat <span class="text-muted">(alias)</span></div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-weibo"></i> fa-weibo</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-weixin"></i> fa-weixin</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-windows"></i> fa-windows</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-wordpress"></i> fa-wordpress</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-xing"></i> fa-xing</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-xing-square"></i> fa-xing-square</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-yahoo"></i> fa-yahoo</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-youtube"></i> fa-youtube</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-youtube-play"></i> fa-youtube-play</div>
+					<div class="col-md-3 col-sm-4"><i class="fa fa-youtube-square"></i> fa-youtube-square</div>
+				</div>
+
+				<div id="changetheemailaddressfornotifyform" class="page-header">
+					<h3>Change the Email Address for Notify Form <a class="backtotop" href="#">Top <i class="fa fa-arrow-circle-up"></i></a></h3>
+				</div>
+
+				<p>
+					Change the default email address example@example.com to your own in <code>notify.php</code> on line 14 to receive emails when the notify form is submitted.
+				</p>
+
+				</section>
+
+				<section id="installation">
+					<h2>Installation</h2>
+	                <p>
+						Upload the content of the <code>template</code> folder to your web hosting server using an FTP client.
+	                </p>
+            	</section>
+
+                <section id="credits">
+                    <h2>Credits</h2>
+                
+                <ul>
+                	<li>jQuery 1.11.1 - <a href="http://jquery.com/download/" target="_blank">http://jquery.com</a></li>
+                	<li>Bootstrap 3 - <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com</a></li>
+                	<li>TimeCircles - <a href="http://git.wimbarelds.nl/TimeCircles/index.html" target="_blank">http://git.wimbarelds.nl/TimeCircles</a></li>
+                	<li>bxSlider - <a href="http://bxslider.com/" target="_blank">http://bxslider.com</a></li>
+                	<li>jQuery Validation Plugin - <a href="http://jqueryvalidation.org/" target="_blank">http://jqueryvalidation.org</a></li>
+                	<li>Modernizr - <a href="http://modernizr.com/" target="_blank">http://modernizr.com</a></li>
+                	<li>Font Awesome - <a href="http://fontawesome.io/" target="_blank">http://fontawesome.io</a></li>
+                	<li>Photos - <a href="http://picjumbo.com/" target="_blank">http://picjumbo.com</a></li>
+                </ul>
+            </section>
+			
+			<p>
+				Once again, thank you for purchasing this template. If you have any questions that are beyond the scope of this help file, please feel free to email us.
+			</p>
+			<p>
+				<strong>&copy; Tilted Themes</strong>
+			</p>
+
+	</div>
+</div>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

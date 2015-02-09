@@ -1,0 +1,54 @@
+/*
+	Color override stylesheet for "Catapult - Responsive Coming Soon Template"
+
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	Table of contents:
+
+	1. Link Color
+	2. Countdown
+	3. Text Selection Color
+	4. Notify Button Color
+	5. About Us Button Hover Color
+
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+/*
+	1. Link Color
+*/
+a, a:hover, a:focus {
+	color: #D45661;
+}
+
+
+/*
+	2. Countdown
+	Note: To change the color of the countdown circles please open [catapult.js] within the [js] folder and edit line [22-27].
+*/
+
+
+/*
+	3. Text Selection Color
+*/
+::selection {
+	background: #D45661;
+}
+
+::-moz-selection {
+	background: #D45661; /* Firefox */
+}
+
+/*
+	4. Notify Button Color
+*/
+.cp-notify .btn {
+	background: #D45661;
+}
+
+/*
+	5. About Us Button Hover Color
+*/
+.cp-toggle:hover {
+	background: #D45661;
+}

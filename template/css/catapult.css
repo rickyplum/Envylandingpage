@@ -1,0 +1,429 @@
+/*
+	Main stylesheet for "Catapult - Responsive Coming Soon Template"
+
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	Table of contents:
+
+	1. Font Import
+	2. General Styles
+	3. Notify Section
+	4. Logo brand Section
+	5. Social Links
+	6. Background/Slider
+	7. About Info Section
+	8. Countdown
+	9. Media Queries
+
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+/*
+	1. Font Import
+*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
+
+
+/*
+	2. General Styles
+*/
+::selection {
+	background: #E22F2E; /* Safari */
+	color: white;
+}
+
+::-moz-selection {
+	background: #E22F2E; /* Firefox */
+	color: white;
+}
+
+a, a:hover, a:focus {
+	color: #E22F2E;
+	text-decoration: underline;
+}
+
+html, body {
+	background: black;
+	height: 100%;
+}
+
+body {
+	padding: 80px 0;
+	color: #fff;
+	text-align: center;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .time_circles > div > span, .time_circles > div > h4 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+.h1, h1, {
+    font-size: 42px;
+}
+
+p {
+	line-height: 22px;
+	margin: 0 0 15px;
+}
+
+.catapult-wrapper {
+	position: relative;
+	z-index: 500;
+}
+
+header:after, section:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.cp-brand, .cp-countdown, .cp-notify {
+    margin-bottom: 60px;
+}
+
+
+/*
+	3. Notify Section
+*/
+.cp-notify .form-inline .form-group {
+	margin-right: -15px;
+}
+
+.cp-notify input {
+	border-radius: 3px;
+	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	border:none;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	height: 45px;
+	font-size: 15px;
+	background: rgba(255,255,255,0.8);
+}
+
+.cp-notify input:hover {
+	background: #f5f5f5;
+}
+
+.cp-notify input:focus {
+	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	background: #f5f5f5;
+}
+
+.cp-notify .btn {
+	background: #E22F2E;
+	color: white;
+	border:none;
+	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	font-size: 15px;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+
+.cp-notify-title {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.cp-notify .btn:hover {
+	background: white;
+	color: black;
+}
+
+.cp-notify .btn:focus {
+	outline: 0;
+}
+
+input.error {
+	color: #DC143C;
+	background: #FFE4E1 !important;
+}
+
+input.error::-moz-input-placeholder  {
+	color: #DC143C;
+}
+
+input.error::-ms-input-placeholder  {
+	color: #DC143C;
+}
+
+input.error::-webkit-input-placeholder  {
+	color: #DC143C;
+}
+
+input.valid {
+    color: #00CC66;
+    background: #F5FFFA !important
+}
+
+label.error {
+	display: none !important;
+}
+
+.cp-form-wrapper {
+	height: 100px;
+}
+
+.cp-ok {
+	font-size: 26px;
+	font-weight: 300;
+	height: 100px;
+	line-height: 100px;
+	display: none;
+}
+
+
+/*
+	4. Logo brand Section
+*/
+.cp-brand img {
+    margin-bottom: 10px;
+}
+
+.cp-brand span {
+	font-size: 50px;
+}
+
+.cp-brand h1 {
+	margin-bottom: 40px
+}
+
+
+/*
+	5. Social Links
+*/
+.cp-social {
+	margin-top: 60px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.cp-social a {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+	border-radius: 100%;
+	border: 1px solid transparent;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	margin: 0 5px;
+	color: white;
+}
+
+.cp-social a:hover {
+	border: 1px solid white;
+	color: white;
+}
+
+
+/*
+	6. Background/Slider
+*/
+.catapult-bg-overlay {
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: rgba(0,0,0,.4);
+}
+
+.bx-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100% !important;
+	width: 100% !important;
+	overflow: hidden;
+}
+
+.bx-wrapper .bx-viewport {
+	border: none;
+	left: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	overflow: hidden;
+	height: 100% !important;
+}
+
+#catapultBG, #catapultBG li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#catapultBG {
+	display: block !important;
+	position: fixed !important;
+	display: block;
+	height: 100% !important;
+	width: 100% !important;
+	top: 0;
+	left: 0;
+}
+
+
+#catapultBG li img {
+	position: fixed;
+	height: 100% !important;
+	width: 100% !important;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	top: 0;
+	left: 0;
+}
+
+.catapult-preload {
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background: rgba(0,0,0,1);
+}
+
+.catapult-preload-spinner {
+	color: #ddd;
+	font-size: 40px;
+	height: 60px;
+	line-height: 60px;
+	width: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+	text-shadow: none;
+	display: none;
+}
+
+
+/*
+	7. About Info Section
+*/
+.cp-toggle {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+	border-radius: 100%;
+	border: 1px solid transparent;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	margin: 0 5px;
+	background: white;
+	color: #333;
+	text-decoration: none;
+}
+
+.cp-toggle:focus {
+	text-decoration: none;
+	outline: 0;
+	color: #333;
+}
+
+.cp-toggle:hover {
+	color: white;
+	text-decoration: none;
+	background: #E22F2E;
+}
+
+.cp-toggle:before {
+	content: "\f129";
+	font-family: FontAwesome;
+	font-size: 21px;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.cp-toggle.cp-info-open:before {
+	content: "\f017";
+	text-decoration: none;
+}
+
+.cp-info {
+	min-height: 397px;
+}
+
+.cp-info h2 {
+	margin-bottom: 20px;
+}
+
+
+/*
+	8. Countdown
+*/
+.time_circles > div > span {
+	font-weight: 300;
+	font-size: 55px !important;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+}
+
+.time_circles > div > h4 {
+	font-weight: 300;
+}
+
+.catapult-countdown {
+	width: 800px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+
+/*
+	9. Media Queries
+*/
+@media (min-width: 768px) and (max-width: 992px) {
+	.catapult-countdown {
+		width: 700px;
+	}
+}
+
+@media (max-width: 768px) {
+	.catapult-countdown {
+		width: 330px;
+		height: 80px
+	}
+	.cp-notify {
+		margin-bottom: 90px;
+	}
+    .cp-notify .form-inline .form-group {
+        margin-right: 0;
+    }
+    .time_circles > div > h4 {
+        font-size: 12px !important;
+    }
+    .time_circles > div > span {
+        font-size: 28px !important;
+    }
+    .cp-brand h1 {
+    	font-size: 30px;
+    }
+}
