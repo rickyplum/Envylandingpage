@@ -321,6 +321,11 @@ label.error {
 	display: none;
 }
 
+img.cp-brand {
+	max-width: 100% 
+
+}
+
 
 /*
 	7. About Info Section
@@ -377,6 +382,8 @@ label.error {
 }
 
 
+
+
 /*
 	8. Countdown
 */
@@ -395,6 +402,8 @@ label.error {
 	height: 200px;
 	margin: 0 auto;
 }
+
+
 
 
 /*
