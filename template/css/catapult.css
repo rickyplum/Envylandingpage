@@ -24,6 +24,12 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
 
 
+
+$(document).ready( function() {
+    $("input[type='text'], textarea").attr('spellcheck',false);
+});
+
+
 /*
 	2. General Styles
 */
@@ -379,6 +385,25 @@ img.cp-brand {
 
 .cp-info h2 {
 	margin-bottom: 20px;
+}
+
+.cp-toggle.cp-info2-open:before {
+	content: "\f017";
+	text-decoration: none;
+}
+
+.cp-info2 {
+	min-height: 397px;
+
+}
+
+.cp-info2 h2 {
+	margin-bottom: 20px;
+}
+
+.cp-toggle.cp-testt-open:before {
+	content: "\f017";
+	text-decoration: none;
 }
 
 
