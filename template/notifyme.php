@@ -11,7 +11,7 @@
 
 		// Send email if no input errors
 		if ( empty( $notify_errors ) ) {
-			$email_to = "nemerov@envybranding.com"; // Change to your own email address
+			$email_to = "opportunities@envybranding.com"; // Change to your own email address
 			$headers = 'From:'. $user_email;
 			$subject = "Notify me at launch";
 			$body = $user_email . " wants to be notified at launch."."\r\n";
