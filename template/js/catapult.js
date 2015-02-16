@@ -13,6 +13,7 @@ $(window).on('load', function(){
 	}, 400);
 });
 
+
 $(document).ready(function() {
 	"use strict";
 	/* Countdown */
@@ -60,20 +61,40 @@ $(document).ready(function() {
 
 	/* About info Toggle */
 	$('.cp-info').hide();
+	$('.cp-info2').hide();
 	$('.cp-toggle').click(function(event) {
 		event.preventDefault();
 		var cptoggle = $(this).data('toggle');
+		$( ".cp-info2" ).hide();
 		if (cptoggle) {
 			$( ".cp-info" ).hide();
+			$( ".cp-info2" ).hide();
 			$( ".cp-countdown, .cp-notify" ).fadeIn(200);
 			$(".cp-toggle").removeClass('cp-info-open');
 		} else {
 			$( ".cp-countdown, .cp-notify" ).hide();
-			$( ".cp-info" ).hide().fadeIn(200);
+			$( ".cp-info" ).hide().fadeIn(200);;
 			$(".cp-toggle").addClass('cp-info-open');
 		}
 		$(this).data("toggle", !cptoggle);
 	});
+
+
+	//  TEST TEST TEST TEST 
+	
+	$('.cp-testt').click(function(event) {
+		$( ".cp-info" ).hide();
+		event.preventDefault();
+		var cptoggle = $(this).data('toggle');
+		if (cptoggle) {
+			$( ".cp-info2" ).hide().fadeIn(200);;
+		} else {
+			$( ".cp-countdown, .cp-notify" ).hide();
+			$( ".cp-info2" ).hide().fadeIn(200);
+			$(".cp-toggle").addClass('cp-info2-open');
+		}
+		$(this).data("toggle", !cptoggle);
+	}); 
 
 	/* Show Year in Footer*/
 	$(".cp-year").text( (new Date).getFullYear() );
