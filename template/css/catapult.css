@@ -23,13 +23,6 @@
 */
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
 
-
-
-$(document).ready( function() {
-    $("input[type='text'], textarea").attr('spellcheck',false);
-});
-
-
 /*
 	2. General Styles
 */
@@ -152,6 +145,78 @@ header:after, section:after {
 .cp-notify .btn:focus {
 	outline: 0;
 }
+
+
+/* CLIENT INFO */
+
+
+.cp-client .form-inline .form-group {
+	margin-right: -15px;
+	margin-bottom: 2px
+}
+
+.cp-client .form-inline2 .form-group2 {
+	margin-right: -15px;
+	margin-bottom: 5px
+}
+.cp-client input {
+	border-radius: 3px;
+	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	border:none;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	height: 45px;
+	font-size: 15px;
+	background: rgba(255,255,255,0.8);
+}
+
+.cp-client input:hover {
+	background: #f5f5f5;
+}
+
+.cp-client input:focus {
+	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	background: #f5f5f5;
+}
+
+.cp-client .btn {
+	background: #E22F2E;
+	color: white;
+	border:none;
+	-webkit-box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	box-shadow:  0 1px 1px rgba(0,0,0,.2);
+	font-size: 15px;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+
+.cp-client-title {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.cp-client .btn:hover {
+	background: white;
+	color: black;
+}
+
+.cp-client .btn:focus {
+	outline: 0;
+}
+
+
+
+
+
 
 input.error {
 	color: #DC143C;
@@ -408,6 +473,68 @@ img.cp-brand {
 
 
 
+/*CLIENT LOGIN*/
+
+cp-clienttoggle {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+	border-radius: 100%;
+	border: 1px solid transparent;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	margin: 0 5px;
+	background: white;
+	color: #333;
+	text-decoration: none;
+}
+
+.cp-clienttoggle:focus {
+	text-decoration: none;
+	outline: 0;
+	color: #333;
+}
+
+.cp-clienttoggle:hover {
+	color: white;
+	text-decoration: none;
+	background: #E22F2E;
+}
+
+.cp-clienttoggle:before {
+	content: "\f192";
+	font-family: FontAwesome;
+	font-size: 21px;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.cp-clienttoggle.cp-info-open:before {
+	content: "\f017";
+	text-decoration: none;
+}
+
+.cp-info {
+	min-height: 397px;
+}
+
+.cp-info h2 {
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*
 	8. Countdown
@@ -451,6 +578,17 @@ img.cp-brand {
     .cp-notify .form-inline .form-group {
         margin-right: 0;
     }
+
+    /* CLIENT LOGIN */
+	.cp-client {
+		margin-bottom: 10px;
+	}
+	
+    .cp-client .form-inline .form-group {
+        margin-right: 0;
+       
+    }
+
     .time_circles > div > h4 {
         font-size: 12px !important;
     }

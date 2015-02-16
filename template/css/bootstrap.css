@@ -1960,6 +1960,45 @@ select[multiple].input-lg {
   .form-inline .has-feedback .form-control-feedback {
     top: 0;
   }
+
+  
+
+@media (min-width: 768px) {
+  .form-inline2 .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline2 .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .form-inline2 .input-group > .form-control {
+    width: 100%;
+  }
+  .form-inline2 .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline2 .radio,
+  .form-inline2 .checkbox {
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline2 .radio input[type="radio"],
+  .form-inline2 .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+  .form-inline2 .has-feedback .form-control-feedback {
+    top: 0;
+  }
+
+
 }
 .form-horizontal .control-label,
 .form-horizontal .radio,
