@@ -151,13 +151,13 @@ header:after, section:after {
 
 
 .cp-client .form-inline .form-group {
-	margin-right: -15px;
+	margin-right: 0px;
 	margin-bottom: 2px
 }
 
-.cp-client .form-inline2 .form-group2 {
-	margin-right: -15px;
-	margin-bottom: 5px
+.cp-client .form-inline .form-group2 {
+	margin-right: 0px;
+	margin-bottom: 10px
 }
 .cp-client input {
 	border-radius: 3px;
@@ -584,7 +584,7 @@ cp-clienttoggle {
 		margin-bottom: 10px;
 	}
 	
-    .cp-client .form-inline .form-group {
+    .cp-client .form-inline .form-group 
         margin-right: 0;
        
     }
