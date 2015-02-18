@@ -18,6 +18,14 @@
 	++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
 
+/* Submit Button
+*/
+
+button.submit { 
+	background:none;
+	border:none; 
+}
+
 /*
 	1. Font Import
 */

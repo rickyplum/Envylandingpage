@@ -2,6 +2,14 @@
 	Catapult JS
 */
 
+
+/*  Submit Button */
+$(".submit").click(function(){
+    
+    document.getElementById("invalid").innerHTML = "Credentials Invalid.  Please try again or contact our administrator at Admin@EnvyBranding.com";
+
+});
+
 /* Preloader*/
 $(window).on('load', function(){
 	"use strict";
