@@ -89,11 +89,10 @@ header:after, section:after {
 }
 
 .cp-brand, .cp-countdown, .cp-notify {
-<<<<<<< HEAD
-    margin-bottom: 0px;
-=======
-    margin-bottom: 30px;
->>>>>>> dad7ece591f134a6fed970dc825aac51d4109cc4
+
+    margin-bottom: 100px;
+
+
 }
 
 
@@ -293,7 +292,7 @@ label.error {
 	5. Social Links
 */
 .cp-social {
-	margin-top: 60px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	font-size: 20px;
 }
@@ -331,7 +330,7 @@ label.error {
 	top: 0;
 	left: 0;
 	z-index: 100;
-	background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.5);
 }
 
 .bx-wrapper {
@@ -535,7 +534,7 @@ img.cp-brand {
 }
 
 .cp-info {
-	min-height: 397px;
+	min-height: 300px;
 }
 
 .cp-info h2 {
@@ -544,17 +543,9 @@ img.cp-brand {
 
 
 
-
-
-
-
-
-
-
-
 /*
 	8. Countdown
-*/
+
 .time_circles > div > span {
 	font-weight: 300;
 	font-size: 55px !important;
@@ -569,6 +560,19 @@ img.cp-brand {
 	width: 800px;
 	height: 200px;
 	margin: 0 auto;
+}
+
+*/
+
+
+
+/*
+	mail
+*/
+
+.mail {
+
+	font-size: 100px
 }
 
 
