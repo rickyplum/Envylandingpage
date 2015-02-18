@@ -154,11 +154,8 @@ header:after, section:after {
 /* CLIENT INFO */
 
 .cp-client {
-<<<<<<< HEAD
-    margin-bottom: 60px;
-=======
 	margin-bottom: 200px
->>>>>>> dad7ece591f134a6fed970dc825aac51d4109cc4
+
 }
 
 .cp-client .form-inline .form-group {
@@ -486,7 +483,7 @@ img.cp-brand {
 
 /*CLIENT LOGIN*/
 
-cp-clienttoggle {
+.cp-clienttoggle {
 	display: inline-block;
 	height: 40px;
 	line-height: 40px;
