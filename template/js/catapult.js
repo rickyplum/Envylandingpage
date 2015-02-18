@@ -95,7 +95,7 @@ $(document).ready(function() {
 		} else {
 			$( ".cp-countdown, .cp-notify, .cp-client" ).hide();
 			$( ".cp-info2" ).hide().fadeIn(200);
-			$(".cp-toggle").addClass('cp-info2-open');
+			$(".cp-toggle").addClass('cp-info-open');
 		}
 		$(this).data("toggle", !cptoggle);
 	}); 

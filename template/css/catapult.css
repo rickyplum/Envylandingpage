@@ -81,7 +81,7 @@ header:after, section:after {
 }
 
 .cp-brand, .cp-countdown, .cp-notify {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 
@@ -149,6 +149,9 @@ header:after, section:after {
 
 /* CLIENT INFO */
 
+.cp-client {
+    margin-bottom: 60px;
+}
 
 .cp-client .form-inline .form-group {
 	margin-right: 0px;
