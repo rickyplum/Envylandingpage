@@ -32,7 +32,7 @@ button.submit {
 */
 
 
-.cp-submit {
+.cp-submitinvalid {
   
   -webkit-text-stroke: .1px black;
 }
@@ -516,8 +516,8 @@ img.cp-brand {
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	width: 40px;
-	border-radius: 100%;
+	/*width: 200px;*/
+	/*border-radius: 100%;*/
 	border: 1px solid transparent;
 	transition: all .2s linear;
 	-o-transition: all .2s linear;
@@ -525,32 +525,32 @@ img.cp-brand {
 	-webkit-transition: all .2s linear;
 	margin: 0 25px;
 	/*background: white;*/
-	color: #333;
+	color: #00a980;
 	text-decoration: none;
 }
 
 .cp-clienttoggle:focus {
 	text-decoration: none;
 	outline: 0;
-	color: #333;
+	color: #00a980;
 }
 
 .cp-clienttoggle:hover {
 	color: white;
 	text-decoration: none;
-	background: #E22F2E;
+	/*background: #00a980;*/
 }
 
 .cp-clienttoggle:before {
-	content: "\f090";
-	font-family: FontAwesome;
+	content: "Client Login";
+	/*font-family: FontAwesome;*/
 	font-size: 21px;
 	text-shadow: none;
 	text-decoration: none;
 }
 
 .cp-clienttoggle.cp-client-open:before {
-	content: "\f017";
+	content: "Client Login";
 	text-decoration: none;
 }
 
@@ -592,9 +592,57 @@ img.cp-brand {
 */
 
 .mail-icon {
-
-	font-size: 100px
+	display: inline-block;
+	/*height: 40px;
+	line-height: 40px;*/ 
+	text-align: center;
+	/*width: 40px;*/
+	
+	/*background: white;*/
+	color: #00a980;
+	text-decoration: none;
 }
+
+.mail-icon:focus {
+	text-decoration: none;
+	outline: 0;
+	color: #;
+}
+
+.mail-icon:hover {
+	color: #D45661;
+	font-size: 90px;
+	text-decoration: none;
+	/*background: #E22F2E;*/
+}
+
+.mail-icon:before {
+	content: "\f003";
+	font-family: FontAwesome;
+	font-size: 90px;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.mail-icon.cp-info-open:before {
+	content: "\f003";
+	text-decoration: none;
+}
+
+/*.mail-icon:before {
+	content: "\f003";
+	color: #00a980;
+	font-family: FontAwesome;
+	font-size: 21px;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.mail-icon:hover {
+	color: #D45661;
+	text-decoration: none;
+}
+*/
 
 
 

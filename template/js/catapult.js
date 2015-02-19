@@ -4,12 +4,12 @@
 
 
 /*  Submit Button */
-$('.cp-submit').hide();
+$('.cp-submitinvalid').hide();
 
 $(".submit").click(function(){
-	$( ".cp-submit" )	.stop().fadeOut();
-    $( ".cp-submit" ).hide().fadeIn(200);;
-    $( ".cp-submit" ).fadeOut(6000);
+	$( ".cp-submitinvalid" )	.stop().fadeOut();
+    $( ".cp-submitinvalid" ).hide().fadeIn(200);;
+    $( ".cp-submitinvalid" ).fadeOut(6000);
 
 });
 
@@ -77,7 +77,7 @@ $(document).ready(function() {
 	$('.cp-info2').hide();
 	$('.cp-toggle').click(function(event) {
 		event.preventDefault();
-		$( ".cp-client" ).hide();
+	//	$( ".cp-client" ).hide();
 		var cptoggle = $(this).data('toggle');
 		$( ".cp-info2" ).hide();
 		if (cptoggle) {
@@ -120,14 +120,12 @@ $(document).ready(function() {
 	$('.cp-clienttoggle').click(function(event) {
 		event.preventDefault();
 		var cpctoggle = $(this).data('toggle');
-		$( ".cp-info" ).hide();
-		$( ".cp-info2" ).hide();
 		if (cpctoggle) {
 			$( ".cp-client" ).hide();
-			$( ".cp-countdown, .cp-notify" ).fadeIn(200);
+			//$( ".cp-countdown, .cp-notify" ).fadeIn(200);
 			$(".cp-clienttoggle").removeClass('cp-client-open');
 		} else {
-			$( ".cp-countdown, .cp-notify" ).hide();
+		//	$( ".cp-countdown, .cp-notify" ).hide();
 			$( ".cp-client" ).hide().fadeIn(200);;
 			$(".cp-clienttoggle").addClass('cp-client-open');
 			$(".cp-toggle").removeClass('cp-info-open');
