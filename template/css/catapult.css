@@ -18,12 +18,23 @@
 	++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
 
-/* Submit Button
+/* 
+	Submit Button
 */
 
 button.submit { 
 	background:none;
 	border:none; 
+}
+
+/* 
+	Invalid 
+*/
+
+
+.cp-submit {
+  
+  -webkit-text-stroke: .1px black;
 }
 
 /*
@@ -428,7 +439,7 @@ img.cp-brand {
 	-o-transition: all .2s linear;
 	-moz-transition: all .2s linear;
 	-webkit-transition: all .2s linear;
-	margin: 0 5px;
+	margin: 0 25px;
 	background: white;
 	color: #333;
 	text-decoration: none;
@@ -474,8 +485,14 @@ img.cp-brand {
 
 .cp-info2 {
 	min-height: 397px;
-
 }
+
+.textWrap {
+	clear:right;
+	float:left;
+	margin-left:10;
+}
+
 
 .cp-info2 h2 {
 	margin-bottom: 20px;
@@ -490,7 +507,11 @@ img.cp-brand {
 
 /*CLIENT LOGIN*/
 
+
+
+
 .cp-clienttoggle {
+
 	display: inline-block;
 	height: 40px;
 	line-height: 40px;
@@ -502,8 +523,8 @@ img.cp-brand {
 	-o-transition: all .2s linear;
 	-moz-transition: all .2s linear;
 	-webkit-transition: all .2s linear;
-	margin: 0 5px;
-	background: white;
+	margin: 0 25px;
+	/*background: white;*/
 	color: #333;
 	text-decoration: none;
 }
@@ -521,14 +542,14 @@ img.cp-brand {
 }
 
 .cp-clienttoggle:before {
-	content: "\f192";
+	content: "\f090";
 	font-family: FontAwesome;
 	font-size: 21px;
 	text-shadow: none;
 	text-decoration: none;
 }
 
-.cp-clienttoggle.cp-info-open:before {
+.cp-clienttoggle.cp-client-open:before {
 	content: "\f017";
 	text-decoration: none;
 }

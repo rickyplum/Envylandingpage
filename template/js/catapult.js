@@ -4,9 +4,12 @@
 
 
 /*  Submit Button */
+$('.cp-submit').hide();
+
 $(".submit").click(function(){
-    
-    document.getElementById("invalid").innerHTML = "Credentials Invalid.  Please try again or contact our administrator at Admin@EnvyBranding.com";
+	$( ".cp-submit" )	.stop().fadeOut();
+    $( ".cp-submit" ).hide().fadeIn(200);;
+    $( ".cp-submit" ).fadeOut(6000);
 
 });
 
@@ -67,33 +70,34 @@ $(document).ready(function() {
 			}
 	});
 
+
+
 	/* About info Toggle */
 	$('.cp-info').hide();
 	$('.cp-info2').hide();
 	$('.cp-toggle').click(function(event) {
 		event.preventDefault();
+		$( ".cp-client" ).hide();
 		var cptoggle = $(this).data('toggle');
 		$( ".cp-info2" ).hide();
 		if (cptoggle) {
 			$( ".cp-info" ).hide();
 			$( ".cp-info2" ).hide();
-			$( ".cp-countdown, .cp-notify, .cp-client" ).fadeIn(200);
+			$( ".cp-countdown, .cp-notify" ).fadeIn(200);
 			$(".cp-toggle").removeClass('cp-info-open');
 		} else {
-			$( ".cp-countdown, .cp-notify, .cp-client" ).hide();
+			$( ".cp-countdown, .cp-notify" ).hide();
 			$( ".cp-info" ).hide().fadeIn(200);;
 			$(".cp-toggle").addClass('cp-info-open');
+			$(".cp-clienttoggle").removeClass('cp-info-open');
+
 		}
 		$(this).data("toggle", !cptoggle);
 	});
 
 
-
-	
-
-
 	/* About Info Change */ 
-	
+
 	$('.cp-testt').click(function(event) {
 		$( ".cp-info" ).hide();
 		event.preventDefault();
@@ -101,12 +105,36 @@ $(document).ready(function() {
 		if (cptoggle) {
 			$( ".cp-info2" ).hide().fadeIn(200);;
 		} else {
-			$( ".cp-countdown, .cp-notify, .cp-client" ).hide();
+			$( ".cp-countdown, .cp-notify" ).hide();
 			$( ".cp-info2" ).hide().fadeIn(200);
 			$(".cp-toggle").addClass('cp-info-open');
 		}
 		$(this).data("toggle", !cptoggle);
 	}); 
+
+
+
+ 	/* Client Login */
+
+ 	$('.cp-client').hide();
+	$('.cp-clienttoggle').click(function(event) {
+		event.preventDefault();
+		var cpctoggle = $(this).data('toggle');
+		$( ".cp-info" ).hide();
+		$( ".cp-info2" ).hide();
+		if (cpctoggle) {
+			$( ".cp-client" ).hide();
+			$( ".cp-countdown, .cp-notify" ).fadeIn(200);
+			$(".cp-clienttoggle").removeClass('cp-client-open');
+		} else {
+			$( ".cp-countdown, .cp-notify" ).hide();
+			$( ".cp-client" ).hide().fadeIn(200);;
+			$(".cp-clienttoggle").addClass('cp-client-open');
+			$(".cp-toggle").removeClass('cp-info-open');
+		}
+		$(this).data("toggle", !cpctoggle);
+	});
+
 
 	/* Show Year in Footer*/
 	$(".cp-year").text( (new Date).getFullYear() );
