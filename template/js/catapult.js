@@ -3,10 +3,17 @@
 */
 
 
+/*
+	Mail Icon
+*/
+
+
+
+
 /*  Submit Button */
 $('.cp-submitinvalid').hide();
 
-$(".submit").click(function(){
+$(".cp-submittoggle").click(function(){
 	$( ".cp-submitinvalid" )	.stop().fadeOut();
     $( ".cp-submitinvalid" ).hide().fadeIn(200);;
     $( ".cp-submitinvalid" ).fadeOut(6000);

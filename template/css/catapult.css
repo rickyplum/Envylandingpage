@@ -183,7 +183,7 @@ header:after, section:after {
 
 .cp-client .form-inline .form-group2 {
 	margin-right: 0px;
-	margin-bottom: 10px
+	margin-bottom: 0px
 }
 .cp-client input {
 	border-radius: 3px;
@@ -561,6 +561,66 @@ img.cp-brand {
 .cp-info h2 {
 	margin-bottom: 20px;
 }
+
+
+
+/*	 Submit Button	*/
+
+.cp-submittoggle {
+
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	/*width: 200px;*/
+	/*border-radius: 100%;*/
+	border: 1px solid transparent;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	margin: 0 25px;
+	/*background: white;*/
+	color: #00a980;
+	text-decoration: none;
+}
+
+.cp-submittoggle:focus {
+	text-decoration: none;
+	outline: 0;
+	color: #00a980;
+}
+
+.cp-submittoggle:hover {
+	color: white;
+	text-decoration: none;
+	/*background: #00a980;*/
+}
+
+.cp-submittoggle:before {
+	content: "SUBMIT";
+	/*font-family: FontAwesome;*/
+	font-size: 14px;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.cp-submittoggle.cp-client-open:before {
+	content: "SUBMIT";
+	text-decoration: none;
+}
+
+
+/* Envy Info  */
+
+.cp-info {
+	min-height: 300px;
+}
+
+.cp-info h2 {
+	margin-bottom: 20px;
+}
+
 
 
 
