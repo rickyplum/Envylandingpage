@@ -85,7 +85,7 @@ body {
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .time_circles > div > span, .time_circles > div > h4 {
-	font-family: 'ankeregular';
+	font-family: 'ankeregular'	
 }
 
 h1, h2, h3 {
@@ -738,7 +738,6 @@ sara picture
 /*
 	9. Media Queries
 */
-
 @media (min-width: 768px) and (max-width: 992px) {
 	.catapult-countdown {
 		width: 700px;
