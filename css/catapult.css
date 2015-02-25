@@ -342,7 +342,14 @@ label.error {
 	left: 0;
 	z-index: 100;
 	background: rgba(0,0,0,.5);
+	overflow: hidden;
 }
+
+
+
+
+
+
 
 .bx-wrapper {
 	position: fixed;
@@ -778,11 +785,9 @@ sara picture
 
 }
 
-img.cp-brand {
-	height: 100%;
-	width: 100%;
 
-}
+
+
 
 
     	
