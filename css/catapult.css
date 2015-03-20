@@ -439,6 +439,7 @@ label.error {
 img.cp-brand {
 	max-width: 100%;
 
+
 }
 
 
@@ -748,6 +749,8 @@ sara picture
 	}
 }
 
+
+
 @media (max-width: 768px) {
 	.catapult-countdown {
 		width: 330px;
@@ -795,6 +798,14 @@ sara picture
 	margin-bottom: 20px;
 
 }
+
+img.cp-brand {
+	max-width: 100% !important;
+
+
+}
+
+
 
 
 
