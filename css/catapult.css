@@ -690,7 +690,7 @@ img.cp-brand {
 
 .mail-icon:hover {
 	color: #D45661;
-	font-size: 90px;
+	font-size: 0;
 	text-decoration: none;
 	/*background: #E22F2E;*/
 }
